@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-qzyh
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-ldlm-tenant/test-app-tsyl/devfile-sample-python-basic-qzyh@sha256:f3f4c10ea92871ca7958bd3db40bebcc43673e5dfce175c034bed2cf0f3c00d1
+        name: my-python
+        resources: {}
+status: {}
